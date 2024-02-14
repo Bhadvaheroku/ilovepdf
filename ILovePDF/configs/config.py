@@ -39,16 +39,16 @@ class group(object):
 class images(object):
     # DEFAULT THUMBNAIL ❌ NB: Thumbnails can’t be reused and can be only uploaded as a new file ❌
     PDF_THUMBNAIL = None  # "./images/thumbnail.jpeg"   PDF_THUMBNAIL & THUMBNAIL_URL must point same img
-    THUMBNAIL_URL = "https://te.legra.ph/file/8dfa3760df91a218a629c.jpg"  # to inc. meadia edit speed
+    THUMBNAIL_URL = "https://mallucampaign.in/images/img_1707901048.jpg"  # to inc. meadia edit speed
 
     # WELCOME IMAGE
-    WELCOME_PIC = "https://te.legra.ph/file/8dfa3760df91a218a629c.jpg"
+    WELCOME_PIC = "https://mallucampaign.in/images/img_1707901048.jpg"
 
     # BANNED IMAGE
-    BANNED_PIC = "https://te.legra.ph/file/8dfa3760df91a218a629c.jpg"
+    BANNED_PIC = "https://mallucampaign.in/images/img_1707901048.jpg"
 
     # BIG FILE
-    BIG_FILE = "https://te.legra.ph/file/8dfa3760df91a218a629c.jpg"
+    BIG_FILE = "https://mallucampaign.in/images/img_1707901048.jpg"
 
 class settings(object):
 
@@ -81,15 +81,15 @@ class settings(object):
         True if os.environ.get("MULTI_LANG_SUP", "False") == "True" else False
     )
 
-    REPORT = "https://t.me/ilovepdf_bot/33?comment=1000000000"
+    REPORT = "https://t.me/deathking_botworld"
 
-    FEEDBACK = "https://telegram.dog/ilovepdf_bot"
+    FEEDBACK = "https://t.me/deathking_botworld"
 
-    SOURCE_CODE = "https://github.com/nabilanavab/iLovePDF"
+    SOURCE_CODE = "https://t.me/deathking_botworld"
 
-    OWNER_ID, OWNER_USERNAME = 531733867, "nabilanavab"
+    OWNER_ID, OWNER_USERNAME = 6140468904, "TryToLiveAlon"
 
-    OWNED_CHANNEL = "https://telegram.dog/iLovePDF_bot"
+    OWNED_CHANNEL = "https://t.me/deathking_botworld"
 
     REFER_BETA = False if os.environ.get("REFER_BETA", "False") == "False" else True
 
