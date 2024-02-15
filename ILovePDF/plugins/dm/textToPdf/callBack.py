@@ -1,13 +1,11 @@
-# This module is part of https://github.com/nabilanavab/ilovepdf
-# Feel free to use and contribute to this project. Your contributions are welcome!
-# copyright ©️ 2021 nabilanavab
-
 file_name = "ILovePDF/plugins/dm/textToPdf/callBack.py"
 
 from plugins import *
 from plugins.utils import *
 from pyrogram.types import InputMediaPhoto
+import logging
 
+logger = logging.getLogger(__name__)
 
 @ILovePDF.on_callback_query(filters.regex("^t2p(?!.*:).*$"))
 async def text_to_pdf_cb(bot, callbackQuery):
@@ -73,7 +71,7 @@ async def text_to_pdf_cb(bot, callbackQuery):
                 tTXT = await util.createBUTTON(tTXT, "1331")
                 media = "https://graph.org/file/eab296f9c761332a9bb50.jpg"
 
-            return await callbackQuery.edit_message_media(
+            await callbackQuery.edit_message_media(
                 media=InputMediaPhoto(
                     media=media, caption=f"```{callbackQuery.message.caption}```"
                 ),
@@ -81,7 +79,7 @@ async def text_to_pdf_cb(bot, callbackQuery):
             )
 
     except Exception as Error:
-        logger.exception("1️⃣ 🐞 %s: %s" % (file_name, Error), exc_info=True)
+        logger.exception("Error occurred in callback function: %s", Error)
 
 # If you have any questions or suggestions, please feel free to reach out.
 # Together, we can make this project even better, Happy coding!  XD
