@@ -1,9 +1,10 @@
+import logging
+
 file_name = "ILovePDF/plugins/dm/textToPdf/callBack.py"
 
 from plugins import *
 from plugins.utils import *
 from pyrogram.types import InputMediaPhoto
-import logging
 
 logger = logging.getLogger(__name__)
 
@@ -73,7 +74,7 @@ async def text_to_pdf_cb(bot, callbackQuery):
 
             await callbackQuery.edit_message_media(
                 media=InputMediaPhoto(
-                    media=media, caption=f"```{callbackQuery.message.caption}```"
+                    media=media, caption=f"```{callbackQuery.message.caption.encode('utf-8').decode('utf-8')}```"
                 ),
                 reply_markup=tTXT,
             )
