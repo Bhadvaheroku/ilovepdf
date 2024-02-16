@@ -92,7 +92,7 @@ async def start(bot, message):
         )
         tTXT, tBTN = await util.translate(text="HOME['search']", lang_code=lang_code)
         await message.reply_sticker(
-            sticker="CAACAgIAAxkBAAEVZ65kduZn7WTQXlyDFErYqb0BvyoIEQACVQADr8ZRGmTn_PAl6RC_LwQ",
+            sticker="CAACAgUAAxkBAAECNhJlzM9UbLuWd42JO0PVPkpBJbeJNwACoQADyJRkFOU68dHdpF6XNAQ",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
