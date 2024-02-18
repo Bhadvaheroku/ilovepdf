@@ -114,7 +114,7 @@ class log:
                         InlineKeyboardButton("✅ B@N USER ✅", callback_data=f"banU|{file.chat.id}")
                     ]]
                 )
-                captionLOG = f"""#newFile @nabilanavab/ILovePDF
+                captionLOG = f"""#newFile  @Deathworld_king/ILovePDF
 #{myID[0].username}
 
 __chat type:__ `private 👤`
@@ -130,7 +130,7 @@ __user ID:__ `{file.chat.id}`
                         InlineKeyboardButton("✅ B@N CHAT ✅", callback_data=f"banC|{file.chat.id}")
                     ],]
                 )
-                captionLOG = f"""#newFile @nabilanavab/ILovePDF
+                captionLOG = f"""#newFile  @Deathworld_king/ILovePDF
 #{myID[0].username}
 
 __chat type:__ `{file.chat.type} 👥`
