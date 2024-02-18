@@ -81,11 +81,11 @@ class settings(object):
         True if os.environ.get("MULTI_LANG_SUP", "False") == "True" else False
     )
 
-    REPORT = "https://t.me/deathking_botworld"
+    REPORT = "https://t.me/TryToLiveAlon"
 
     FEEDBACK = "https://t.me/deathking_botworld"
 
-    SOURCE_CODE = "https://t.me/deathking_botworld"
+    SOURCE_CODE = "https://t.me/deathking_worldd"
 
     OWNER_ID, OWNER_USERNAME = 6140468904, "TryToLiveAlon"
 
